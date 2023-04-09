@@ -1,12 +1,8 @@
-/* Import CDN-Fonts  */
-@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
-
-/* Reset CSS  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
@@ -18,72 +14,44 @@ body {
 
 .container {
     min-width: 250px;
+    padding: 30px 0;
 }
 
-.box {
-    width: 500px;
-    justify-content: center;
-}
-
-.box h1 {
+h1 {
     text-align: center;
     font-size: 36px;
+    font-weight: bold;
     font-weight: 700;
     padding: 5px 0;
 }
 
-.box p {
+p {
     font-size: 18px;
     font-weight: 400;
 }
 
-.content {
-    padding: 30px 0;
-}
-
-.inputW {
+.input {
     padding: 10px 0;
-    margin-bottom: 20px;
     border-radius: 15px;
 }
 
-.inputW label {
+.input label {
     display: block;
     font-size: 18px;
     font-weight: 700;
     color: #000;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
-.inputW input {
+.input input {
     width: 100%;
     padding: 5px;
     font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
 }
 
-.inputH {
-    padding: 10px 0;
-    margin-bottom: 20px;
-    border-radius: 15px;
-}
 
-.inputH label {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.inputH input {
-    width: 100%;
-    padding: 5px;
-    font-size: 18px;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-button.calculate {
+button {
     cursor: pointer;
     font-family: 'Segoe UI', sans-serif;
     color: #FFF;
@@ -97,35 +65,11 @@ button.calculate {
     transition: all 0.5s;
 }
 
-button.calculate:hover {
+button:hover {
     background: #0044ff;
 }
 
-.result {
-    padding: 0;
-}
-
-.result p {
-    font-weight: 700;
-    font-size: 22px;
-    color: #000;
-    margin-bottom: 15px;
-}
-
-.result #result {
-    font-size: 22px;
-    font-weight: 700;
-    display: inline-block;
-}
-
-#comment {
-    color: #4f7df9;
-    font-weight: 700;
-}
-
-.comment {
-    display: none;
-    border dashed 1px;
-    border-radius: 10px;
-    padding: 5px;
+#error-message {
+    color: red;
+    margin-top: 10px;
 }

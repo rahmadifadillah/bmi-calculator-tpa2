@@ -1,48 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/style.css">
     <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
     <title>BMI Calculator TPA #2</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="box">
-            <h1>Check your BMI</h1>
-            <p>Enter your weight and height below to check your BMI results</p>
-            <div class="content">
-                <div class="containerHW">
-                    <div class="inputW">
-                        <label for="weight">Put your weight in here (KG)</label>
-                        <input type="number" id="weight" placeholder="60" required>
-                    </div>
-
-                    <div class="inputH">
-                        <label for="height">And your height in here (CM)</label>
-                        <input type="number" id="height" placeholder="167" required>
-                    </div>
-                </div>
-                <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
-            </div>
-
-            <div class="result">
-                <p>Your BMI is</p>
-                <div id="result">00.0 which mean</div>
-                <p class="comment"></p>
-            </div>
+        <h1>Check your BMI</h1>
+        <p>Enter your weight and height below to check your BMI results</p>
+        <div class="input">
+            <label>Put your weight in here (KG)</label>
+            <input type="number" id="weight" placeholder="60" required>
         </div>
+        <div class="input">
+            <label>And your height in here (CM)</label>
+            <input type="number" id="height" placeholder="167" required>
+        </div>
+        <button id="calculate">Calculate BMI</button>
+        <div id="result"></div>
     </div>
 
-
-
-
-
-    <!-- Javascript  -->
     <script src="/dist/js/script.js"></script>
 </body>
 
